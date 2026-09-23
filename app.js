@@ -47,7 +47,7 @@ app.get('/assignments', async (req, res) => {
     }
 });
 
-// PATCH /assignments/:id - Mark assignment as submitted
+// PATCH /assignments/:id - Mark assignment as submitted [tested]
 app.patch('/assignments/:id', async (req, res) => {
     try {
         const { id } = req.params;
