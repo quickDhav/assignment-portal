@@ -65,7 +65,7 @@ app.patch('/assignments/:id', async (req, res) => {
     }
 });
 
-// DELETE /assignments/:id - Delete an assignment
+// DELETE /assignments/:id - Delete an assignment [tested]
 app.delete('/assignments/:id', async (req, res) => {
     try {
         const { id } = req.params;
