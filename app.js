@@ -22,7 +22,7 @@ app.post('/assignments', async (req, res) => {
     }
 });
 
-// GET /assignments - Get all assignments (supports ?submitted=true filter)
+// GET /assignments - Get all assignments (supports ?submitted=true filter) [tested]
 app.get('/assignments', async (req, res) => {
     try {
         const { submitted } = req.query;
