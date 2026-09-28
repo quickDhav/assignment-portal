@@ -1,10 +1,10 @@
-# 📚 Newton Learn Hub — Assignment Portal Backend
+# Newton Learn Hub — Assignment Portal Backend
 
 A backend API for the Newton Learn Hub Assignment Portal built using **Node.js**, **Express**, and **PostgreSQL** with raw SQL queries via the `pg` package.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Runtime:** Node.js
 - **Framework:** Express.js
@@ -14,7 +14,7 @@ A backend API for the Newton Learn Hub Assignment Portal built using **Node.js**
 
 ---
 
-## 🗄️ Database Setup
+## Database Setup
 
 ### 1. Create Database
 ```sql
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS assignments (
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 ```bash
@@ -66,7 +66,7 @@ The server will run on `http://localhost:3000`.
 
 ---
 
-## 🔌 API Endpoints & Documentation
+## API Endpoints & Documentation
 
 | Method | Endpoint | Description | Status Code |
 | :--- | :--- | :--- | :--- |
@@ -78,7 +78,7 @@ The server will run on `http://localhost:3000`.
 
 ---
 
-## 🧪 Example API Requests
+## Example API Requests
 
 ### 1. Create an Assignment
 ```bash
@@ -139,7 +139,7 @@ curl -X DELETE http://localhost:3000/assignments/1
 
 ---
 
-## 🔒 Security & Architecture Highlights
+## Security & Architecture Highlights
 - **Parameterized Queries:** All queries strictly use SQL parameterization (`$1`, `$2`) to prevent SQL Injection.
 - **No ORM:** Implemented purely with raw PostgreSQL queries.
 - **Default Database Handling:** Defaults `submitted` status to `false` at the schema level.
